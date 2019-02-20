@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cesta"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_superMercado"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Super Mercados" />
+        <item
+            android:id="@+id/nav_cerveja"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Cervejas" />
+        <item
+            android:id="@+id/nav_volume"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Volumes" />
+        <item
+            android:id="@+id/nav_marca"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Marca" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
