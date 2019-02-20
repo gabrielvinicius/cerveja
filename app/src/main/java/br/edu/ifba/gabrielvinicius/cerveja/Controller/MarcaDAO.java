@@ -17,9 +17,7 @@ public class MarcaDAO {
         return instance;
     }
     public Marca insert (Marca target){
-        target.save();
-        Marca test = SugarRecord.first(Marca.class);
-        return SugarRecord.first(Marca.class) ;
+        return SugarRecord.findById(Marca.class, target.save());
     }
     public Marca update(Marca target){
         return getById(target.update());

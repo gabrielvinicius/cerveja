@@ -13,6 +13,7 @@ public class Cerveja extends SugarRecord {
     public Cerveja(){
     nome = "";
     marca = new Marca();
+
     }
     public Cerveja(String nome, Marca marca) {
         this.nome = nome;

@@ -29,7 +29,7 @@ public class ItemDAO {
         return SugarRecord.findById(Item.class,id);
     }
     public List<Item> listByCesta(Cesta cesta){
-        return Item.find(Item.class,"cesta = ?",String.valueOf(cesta.getId()));
+        return Item.find(Item.class,"cesta = ? ORDER BY preco_por_litro ASC",String.valueOf(cesta.getId()));
     }
     public List<Item> listAll(){
         return SugarRecord.listAll(Item.class);
