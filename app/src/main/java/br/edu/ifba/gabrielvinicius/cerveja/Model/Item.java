@@ -14,7 +14,7 @@ public class Item extends SugarRecord {
     private Float preco;
     @NotNull
     private Cesta cesta;
-
+    @NotNull
     private Float precoPorLitro;
 
 
@@ -91,5 +91,9 @@ public class Item extends SugarRecord {
 
     public Cesta getCesta() {
         return cesta;
+    }
+
+    public void setPrecoPorLitro(Float precoPorLitro) {
+        this.precoPorLitro = preco/volume.getVolume() * 1000;
     }
 }

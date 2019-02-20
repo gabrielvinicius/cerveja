@@ -35,6 +35,6 @@ public class ItemDAO {
         return SugarRecord.listAll(Item.class);
     }
     public List<Item> listSort(Cesta cesta) {
-        return Item.find(Item.class, "cesta = ? ORDER BY precoPorLitro ASC  ",String.valueOf(cesta.getId()));
+        return Item.find(Item.class, "cesta = ? ORDER BY preco_por_litro ASC",String.valueOf(cesta.getId()));
     }
 }
