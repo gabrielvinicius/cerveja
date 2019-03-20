@@ -17,18 +17,18 @@ public class CervejaDAO {
         return instance;
     }
     public Cerveja insert (Cerveja target){
-       long id = target.save();
+
+       long id = SugarRecord.save(target);
         return getById(id);
 
     }
     public Cerveja update(Cerveja target){
-        return getById(target.update());
+        return getById(SugarRecord.update(target));
     }
     public boolean delete (Cerveja target){
-        return target.delete();
+        return SugarRecord.delete(target);
     }
     public Cerveja getById(Long id){
-
         return SugarRecord.findById(Cerveja.class,id);
     }
     public List<Cerveja> listPorMarca(Marca marca){
